@@ -5,7 +5,7 @@ import requests
 def main():
     st.title("Dr. Fred, Your CBT-based Psychotherapist")
     api_key = st.secrets['kelid']
-    input_text = st.text_input(' What are you struggling with? \\ Just type it here and press the submit button.',
+    input_text = st.text_input(' What are you struggling with? \n Just type it here and press the submit button.',
                                 )
     model_name='mistralai/Mistral-7B-Instruct-v0.1'
     if st.button("Submit") :
