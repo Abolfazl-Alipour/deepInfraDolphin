@@ -4,7 +4,7 @@ import requests
 
 st.title("Dr. Fred, Your CBT-based Psychotherapist")
 api_key = st.secrets['kelid']
-input_text = st.text_input("What are you struggling with? Just type it here and Dr. Fred will give you recommnedations.")
+input_text = st.text_input("What are you struggling with? Just type it here and press the submit botton, \n Dr. Fred will give you recommnedations.")
 model_name='mistralai/Mistral-7B-Instruct-v0.1'
 if st.button("Submit") | st.session_state.enter_pressed :
     url = f"https://api.deepinfra.com/v1/inference/{model_name}"
